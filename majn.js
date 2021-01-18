@@ -1,1 +1,2 @@
-const secretmess = "JulkisPulkis"
+const secretmess = "JULKISPULKIS"
+
