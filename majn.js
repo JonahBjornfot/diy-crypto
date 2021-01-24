@@ -45,3 +45,22 @@ console.log(kryptering)
 dekrypt();
 
 const svarbakom = "BE NICE TO EACH OTHER AND THE PLANET PLEASE"
+
+
+function enkryptm(mess, steg) {
+    const krypterm = []
+    for (let i = 0; i < mess.length; i++) {
+        krypterm.push(mess[i].charCodeAt(0))
+    }
+    
+    for (let i = 0; i < krypterm.length; i++) {
+        krypterm[i] = krypterm[i] + steg
+    }
+    
+    let result = ""
+    for (let i = 0; i < krypterm.length; i++) {
+        result = result + String.fromCharCode(krypterm[i])
+    }
+
+return result
+}
