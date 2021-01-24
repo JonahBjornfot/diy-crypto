@@ -9,7 +9,7 @@ let kryptering = ""
 
 //Städa
 
-function enkrypt() {
+export function enkrypt() {
     for (let i = 0; i < secretmess.length; i++) {
         charkoder.push(secretmess[i].charCodeAt(0))
     }
@@ -26,7 +26,7 @@ console.log(krypter)
 
 enkrypt();
 
-function dekrypt() {
+export function dekrypt() {
     console.log(krypter)
     for (let i = 0; i < krypter.length; i++) {
         charkoder.push(krypter[i].charCodeAt(0))
@@ -47,7 +47,7 @@ dekrypt();
 const svarbakom = "BE NICE TO EACH OTHER AND THE PLANET PLEASE"
 
 
-function enkryptm(mess, steg) {
+export function enkryptm(mess, steg) {
     const krypterm = []
     for (let i = 0; i < mess.length; i++) {
         krypterm.push(mess[i].charCodeAt(0))
